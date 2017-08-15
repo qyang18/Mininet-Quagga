@@ -46,6 +46,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 ## Make new file, copy zebra.conf.sample to zebra.conf:
 
 > $ cd /usr/local/etc
+
 > $ sudo cp zebra.conf.sample zebra.conf
 
 ## Start zebra:
@@ -55,7 +56,9 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 ### If zebra: error while loading shared libraries: libzebra.so.1: cannot open shared object file: No such file or directory
 
 > $ cd /usr/local/lib
+
 > $ sudo cp libzebra.* /lib
+
 > $ sudo rm libzebra.*
 
 # 2. Quagga Service Start
