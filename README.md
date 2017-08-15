@@ -64,7 +64,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 # 2. Run OSPF Experiment (One Mininet)
 
-## One Mininet Experiment Topo:
+## Experiment Topo:
 
 ![](./src/Architecture.jpg)
 
@@ -92,7 +92,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 # 3. Run OSPF Experiment (Hybrid)
 
-## Hybrid Experiment Topo:
+## Experiment Topo:
 
 ![](./src/Architecture.jpg)
 
@@ -118,9 +118,9 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 > $ sudo route add default gw ?
 
-# 4. Run SDN and Non-SDN Experiment
+# 4. Run SDN and Non-SDN Combination Experiment
 
-## SDN and Non-SDN Experiment Topo:
+## Experiment Topo:
 
 ![](./src/Architecture.jpg)
 
