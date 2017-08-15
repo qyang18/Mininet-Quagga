@@ -1,6 +1,3 @@
-# Mininet-Quagga Topo:
-![](./src/Architecture.jpg)
-
 # 1. Quagga Install And Configuration
 
 ## Quagga Install Guide:
@@ -64,3 +61,31 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 ## Connect to zebra using telnet(password zebra):
 
 > $ telnet localhost 2601
+
+# 2. Configure OSPF
+
+## Experiment Topo:
+
+![](./src/Architecture.jpg)
+
+## Create Zebra Configuration File for router r1 and r2:
+
+> $ cd /usr/local/etc
+
+> $ cp zebra.conf r1zebra.conf
+
+> $ cp zebra.conf r2zebra.conf
+
+## Create OSPF Configuration File for router r1 and r2:
+
+> $ cd /usr/local/etc
+
+> $ cp ospfd.conf r1ospfd.conf
+
+> $ cp ospfd.conf r2ospfd.conf
+
+## Edit OSPF configuration File:
+
+## Start Mininet Script:
+
+> $ sudo python QuaggaOSPF.py
