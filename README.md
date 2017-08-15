@@ -1,26 +1,19 @@
 # Mininet-Quagga Topo:
 ![](./src/Architecture.jpg)
-The IP address and Mac address of devices in topo:
 
+# 1. Quagga Install And Configuration
 
->`Server:192.168.33.101  00:25:90:fc:cd:dc`
+## Quagga Install Guide:
 
->`Pica8:    192.168.33.104  48:6e:73:02:05:ad`
+http://blog.chinaunix.net/uid-25513153-id-212328.html
 
->`Host1:    192.168.33.110  b8:27:eb:ed:94:03`
+## Download Quagga:
 
->`Host2:    192.168.33.111  b8:27:eb:f0:4b:00`
+http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
+## Unzip and Configure:
 
-
-# 1. Testbed Configuration
-
-## ONOS Install guide:
-
-https://wiki.onosproject.org/display/ONOS/Building+ONOS
-
-https://wiki.onosproject.org/display/ONOS/ONOS+from+Scratch
-
+> $ ./configure --enable-vtysh --enable-user=root --enable-group=root --enable-vty-group=root
 
 ## Pica8 Configuration
 
