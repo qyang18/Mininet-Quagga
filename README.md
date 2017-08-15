@@ -62,9 +62,9 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 > $ telnet localhost 2601
 
-# 2. Configure OSPF
+# 2. Run OSPF Experiment (One Mininet)
 
-## Experiment Topo:
+## One Mininet Experiment Topo:
 
 ![](./src/Architecture.jpg)
 
@@ -89,3 +89,38 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 ## Start Mininet Script:
 
 > $ sudo python QuaggaOSPF.py
+
+# 3. Run OSPF Experiment (Hybrid)
+
+## Hybrid Experiment Topo:
+
+![](./src/Architecture.jpg)
+
+## Run Mininet Script on PC1:
+
+> $ sudo python QuaggaOSPF (hybrid).py
+
+## Edit OSPF Configuration File on PC2:
+
+> $ cd /usr/local/etc
+
+> $ nano ospfd.conf
+
+## Run Zebra and OSPF on PC2:
+
+> $ sudo zebra -d
+
+> $ sudo ospfd -d
+
+## Configure IP address and gateway on Pi:
+
+> $ sudo ifconfig eth0 ?
+
+> $ sudo route add default gw ?
+
+# 4. Run SDN and Non-SDN Experiment
+
+## SDN and Non-SDN Experiment Topo:
+
+![](./src/Architecture.jpg)
+
