@@ -49,7 +49,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 > $ sudo cp zebra.conf.sample zebra.conf
 
-## Start zebra:
+## Quagga(Zebra) Service Start:
 
 > $ sudo zebra -d
 
@@ -60,8 +60,6 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 > $ sudo cp libzebra.* /lib
 
 > $ sudo rm libzebra.*
-
-# 2. Quagga Service Start
 
 ## Connect to zebra using telnet(password zebra):
 
