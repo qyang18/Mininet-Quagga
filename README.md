@@ -72,9 +72,9 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 > $ cd /usr/local/etc
 
-> $ cp zebra.conf r1zebra.conf
+> $ cp zebra.conf.sample r1zebra.conf
 
-> $ cp zebra.conf r2zebra.conf
+> $ cp zebra.conf.sample r2zebra.conf
 
 ## Create OSPF Configuration File for router r1 and r2:
 
@@ -117,6 +117,12 @@ log file /usr/local/etc/r2ospfd.log
 
 > $ sudo python QuaggaOSPF.py
 
+## Ping test:
+
+> mininet> pingall
+
+### It may take a while(40s) to add route. 
+
 # 3. Run OSPF Experiment (Hybrid)
 
 ## Experiment Topo:
@@ -127,11 +133,28 @@ log file /usr/local/etc/r2ospfd.log
 
 > $ sudo python QuaggaOSPF (hybrid).py
 
-## Edit OSPF Configuration File on PC2:
+## Copy Zebra Configuration File on PC2:
+
+> $ cp zebra.conf.sample zebra.conf
+
+## Copy and Edit OSPF Configuration File on PC2:
 
 > $ cd /usr/local/etc
 
+> $ cp ospfd.conf.sample ospfd.conf
+
 > $ nano ospfd.conf
+
+```
+hostname hp2_ospfd
+password 123
+enable password 123
+
+router ospf
+ ospf router-id 10.0.3.20
+ network 10.0.3.0/24 area 0
+ network 10.0.2.0/24 area 0
+```
 
 ## Run Zebra and OSPF on PC2:
 
@@ -141,15 +164,23 @@ log file /usr/local/etc/r2ospfd.log
 
 ## Configure IP address and gateway on Pi:
 
-> $ sudo ifconfig eth0 ?
+> $ sudo ifconfig eth0 10.0.2.100/24
 
-> $ sudo route add default gw ?
+> $ sudo route add default gw 10.0.2.20
+
+## Ping Test:
+
+> mininet> h1 ping 10.0.2.100
+
+### It may take a while(40s) to add route. 
 
 # 4. Run SDN and Non-SDN Combination Experiment
 
 ## Experiment Topo:
 
 ![](./Topo/Exp3.png)
+
+
 # Trouble Shooting
 ## 1.OSPF service wait a long time before adding route.
 
