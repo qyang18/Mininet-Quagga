@@ -87,14 +87,31 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 ## Edit OSPF configuration File:
 ### Edit r1ospfd.conf
 ```
-network 10.0.1.0/24 area 0
-network 10.0.3.0/24 area 0
+hostname r1_ospfd
+password 123
+enable password 123
+
+router ospf
+  ospf router-id 10.0.3.10
+  network 10.0.3.0/24 area 0
+  network 10.0.1.0/24 area 0
+  network 10.0.4.0/24 area 0
+debug ospf event
+log file /usr/local/etc/r1ospfd.log
 ```
 ### Edit r2ospfd.conf
 ```
-network 10.0.2.0/24 area 0
-network 10.0.3.0/24 area 0
-```
+hostname r2_ospfd
+password 123
+enable password 123
+
+router ospf
+  ospf router-id 10.0.3.20
+  network 10.0.3.0/24 area 0
+  network 10.0.2.0/24 area 0
+  network 10.0.5.0/24 area 0
+debug ospf event
+log file /usr/local/etc/r2ospfd.log```
 ## Start Mininet Script:
 
 > $ sudo python QuaggaOSPF.py
