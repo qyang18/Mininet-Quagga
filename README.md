@@ -95,7 +95,6 @@ router ospf
   ospf router-id 10.0.3.10
   network 10.0.3.0/24 area 0
   network 10.0.1.0/24 area 0
-  network 10.0.4.0/24 area 0
 debug ospf event
 log file /usr/local/etc/r1ospfd.log
 ```
@@ -109,7 +108,6 @@ router ospf
   ospf router-id 10.0.3.20
   network 10.0.3.0/24 area 0
   network 10.0.2.0/24 area 0
-  network 10.0.5.0/24 area 0
 debug ospf event
 log file /usr/local/etc/r2ospfd.log
 ```
@@ -180,6 +178,49 @@ router ospf
 
 ![](./Topo/Exp3.png)
 
+## Edit OSPF Configuration Files:
+
+> $ cd /usr/local/etc
+
+> $ sudo nano r1ospfd.conf
+
+```
+hostname r1_ospfd
+password 123
+enable password 123
+
+router ospf
+  ospf router-id 10.0.3.10
+  network 10.0.3.0/24 area 0
+  network 10.0.1.0/24 area 0
+  network 10.0.4.0/24 area 0
+debug ospf event
+log file /usr/local/etc/r1ospfd.log
+```
+> $ sudo nano r2ospfd.conf
+
+```
+hostname r2_ospfd
+password 123
+enable password 123
+
+router ospf
+  ospf router-id 10.0.3.20
+  network 10.0.3.0/24 area 0
+  network 10.0.2.0/24 area 0
+  network 10.0.5.0/24 area 0
+debug ospf event
+log file /usr/local/etc/r2ospfd.log
+```
+## Run Mininet Script:
+
+> $ sudo python QuaggaOSPF (SDN+NONSDN).py
+
+## Ping Test:
+
+> mininet> pingall
+
+### It may take a while(40s) to add route. 
 
 # Trouble Shooting
 ## 1.OSPF service wait a long time before adding route.
