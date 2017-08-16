@@ -66,7 +66,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 ## Experiment Topo:
 
-![](./Exp1.jpg)
+![](./Topo/Exp1.jpg)
 
 ## Create Zebra Configuration File for router r1 and r2:
 
@@ -121,7 +121,7 @@ log file /usr/local/etc/r2ospfd.log
 
 ## Experiment Topo:
 
-![](./Exp(Hybrid).jpg)
+![](./Topo/Exp2.jpg)
 
 ## Run Mininet Script on PC1:
 
@@ -149,5 +149,7 @@ log file /usr/local/etc/r2ospfd.log
 
 ## Experiment Topo:
 
-![](./Exp3.jpg)
+![](./Topo/Exp3.jpg)
+# Trouble Shooting
+## 1.OSPF service wait a long time before adding route.
 
