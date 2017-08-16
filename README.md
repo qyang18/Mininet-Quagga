@@ -1,4 +1,4 @@
-# 1. Quagga Install And Configuration
+﻿# 1. Quagga Install And Configuration
 
 ## Quagga Install Guide:
 
@@ -66,7 +66,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 ## Experiment Topo:
 
-![](./Topo/Exp1.jpg)
+![](./Topo/Exp1.png)
 
 ## Create Zebra Configuration File for router r1 and r2:
 
@@ -121,7 +121,7 @@ log file /usr/local/etc/r2ospfd.log
 
 ## Experiment Topo:
 
-![](./Topo/Exp2.jpg)
+![](./Topo/Exp2.png)
 
 ## Run Mininet Script on PC1:
 
@@ -149,7 +149,7 @@ log file /usr/local/etc/r2ospfd.log
 
 ## Experiment Topo:
 
-![](./Topo/Exp3.jpg)
+![](./Topo/Exp3.png)
 # Trouble Shooting
 ## 1.OSPF service wait a long time before adding route.
 
