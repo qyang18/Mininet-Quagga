@@ -111,7 +111,8 @@ router ospf
   network 10.0.2.0/24 area 0
   network 10.0.5.0/24 area 0
 debug ospf event
-log file /usr/local/etc/r2ospfd.log```
+log file /usr/local/etc/r2ospfd.log
+```
 ## Start Mininet Script:
 
 > $ sudo python QuaggaOSPF.py
