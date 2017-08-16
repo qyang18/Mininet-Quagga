@@ -103,7 +103,7 @@ network 10.0.3.0/24 area 0
 
 ## Experiment Topo:
 
-![](./src/Architecture.jpg)
+![](./Exp(Hybrid).jpg)
 
 ## Run Mininet Script on PC1:
 
