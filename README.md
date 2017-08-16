@@ -66,7 +66,7 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 
 ## Experiment Topo:
 
-![](./src/Architecture.jpg)
+![](./Exp1.jpg)
 
 ## Create Zebra Configuration File for router r1 and r2:
 
@@ -131,5 +131,5 @@ network 10.0.3.0/24 area 0
 
 ## Experiment Topo:
 
-![](./src/Architecture.jpg)
+![](./Exp3.jpg)
 
