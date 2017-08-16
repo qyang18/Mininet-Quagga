@@ -85,7 +85,16 @@ http://download.savannah.gnu.org/releases/quagga/quagga-1.2.1.tar.gz
 > $ cp ospfd.conf r2ospfd.conf
 
 ## Edit OSPF configuration File:
-
+### Edit r1ospfd.conf
+```
+network 10.0.1.0/24 area 0
+network 10.0.3.0/24 area 0
+```
+### Edit r2ospfd.conf
+```
+network 10.0.2.0/24 area 0
+network 10.0.3.0/24 area 0
+```
 ## Start Mininet Script:
 
 > $ sudo python QuaggaOSPF.py
