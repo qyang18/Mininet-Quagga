@@ -1,0 +1,60 @@
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 10.0.2.100, port 59206
+[ 11] local 10.0.1.100 port 5201 connected to 10.0.2.100 port 59208
+[ ID] Interval           Transfer     Bandwidth
+[ 11]   0.00-1.00   sec  8.48 MBytes  71.2 Mbits/sec                  
+[ 11]   1.00-2.00   sec  9.77 MBytes  81.9 Mbits/sec                  
+[ 11]   2.00-3.00   sec  9.75 MBytes  81.8 Mbits/sec                  
+[ 11]   3.00-4.00   sec  9.75 MBytes  81.8 Mbits/sec                  
+[ 11]   4.00-5.00   sec  9.74 MBytes  81.7 Mbits/sec                  
+[ 11]   5.00-6.00   sec  9.76 MBytes  81.8 Mbits/sec                  
+[ 11]   6.00-7.00   sec  9.78 MBytes  82.1 Mbits/sec                  
+[ 11]   7.00-8.00   sec  9.80 MBytes  82.2 Mbits/sec                  
+[ 11]   8.00-9.00   sec  9.51 MBytes  79.8 Mbits/sec                  
+[ 11]   9.00-10.00  sec  8.55 MBytes  71.8 Mbits/sec                  
+[ 11]  10.00-11.00  sec  7.93 MBytes  66.5 Mbits/sec                  
+[ 11]  11.00-12.00  sec  7.10 MBytes  59.6 Mbits/sec                  
+[ 11]  12.00-13.00  sec  6.92 MBytes  58.1 Mbits/sec                  
+[ 11]  13.00-14.00  sec  6.36 MBytes  53.4 Mbits/sec                  
+[ 11]  14.00-15.00  sec  6.35 MBytes  53.3 Mbits/sec                  
+[ 11]  15.00-16.00  sec  6.59 MBytes  55.3 Mbits/sec                  
+[ 11]  16.00-17.00  sec  6.53 MBytes  54.7 Mbits/sec                  
+[ 11]  17.00-18.00  sec  6.20 MBytes  52.0 Mbits/sec                  
+[ 11]  18.00-19.00  sec  6.60 MBytes  55.3 Mbits/sec                  
+[ 11]  19.00-20.00  sec  6.61 MBytes  55.5 Mbits/sec                  
+[ 11]  20.00-21.00  sec  6.30 MBytes  52.9 Mbits/sec                  
+[ 11]  21.00-22.00  sec  6.41 MBytes  53.8 Mbits/sec                  
+[ 11]  22.00-23.00  sec  6.62 MBytes  55.5 Mbits/sec                  
+[ 11]  23.00-24.00  sec  6.46 MBytes  54.2 Mbits/sec                  
+[ 11]  24.00-25.00  sec  6.25 MBytes  52.4 Mbits/sec                  
+[ 11]  25.00-26.00  sec  6.61 MBytes  55.5 Mbits/sec                  
+[ 11]  26.00-27.00  sec  6.58 MBytes  55.2 Mbits/sec                  
+[ 11]  27.00-28.00  sec  6.28 MBytes  52.7 Mbits/sec                  
+[ 11]  28.00-29.00  sec  6.47 MBytes  54.2 Mbits/sec                  
+[ 11]  29.00-30.00  sec  6.57 MBytes  55.1 Mbits/sec                  
+[ 11]  30.00-31.00  sec  6.44 MBytes  54.0 Mbits/sec                  
+[ 11]  31.00-32.00  sec  6.32 MBytes  53.0 Mbits/sec                  
+[ 11]  32.00-33.00  sec  6.56 MBytes  55.0 Mbits/sec                  
+[ 11]  33.00-34.00  sec  6.62 MBytes  55.5 Mbits/sec                  
+[ 11]  34.00-35.00  sec  6.20 MBytes  52.0 Mbits/sec                  
+[ 11]  35.00-36.00  sec  6.47 MBytes  54.3 Mbits/sec                  
+[ 11]  36.00-37.00  sec  6.66 MBytes  55.8 Mbits/sec                  
+[ 11]  37.00-38.00  sec  6.36 MBytes  53.4 Mbits/sec                  
+[ 11]  38.00-39.00  sec  6.29 MBytes  52.8 Mbits/sec                  
+[ 11]  39.00-40.00  sec  6.67 MBytes  55.9 Mbits/sec                  
+[ 11]  40.00-41.00  sec  6.52 MBytes  54.7 Mbits/sec                  
+[ 11]  41.00-42.00  sec  6.23 MBytes  52.3 Mbits/sec                  
+[ 11]  42.00-43.00  sec  6.56 MBytes  55.0 Mbits/sec                  
+[ 11]  43.00-44.00  sec  6.51 MBytes  54.6 Mbits/sec                  
+[ 11]  44.00-45.00  sec  6.43 MBytes  53.9 Mbits/sec                  
+[ 11]  45.00-46.00  sec  6.38 MBytes  53.5 Mbits/sec                  
+[ 11]  46.00-47.00  sec  6.50 MBytes  54.5 Mbits/sec                  
+[ 11]  47.00-48.00  sec  6.60 MBytes  55.3 Mbits/sec                  
+[ 11]  48.00-49.00  sec  6.22 MBytes  52.2 Mbits/sec                  
+[ 11]  49.00-50.00  sec  6.51 MBytes  54.6 Mbits/sec                  
+[ 11]  50.00-50.04  sec   400 KBytes  82.8 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 11]   0.00-50.04  sec   356 MBytes  59.7 Mbits/sec    0

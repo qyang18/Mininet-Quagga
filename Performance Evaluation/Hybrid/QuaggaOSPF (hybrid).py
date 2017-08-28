@@ -6,6 +6,7 @@ from mininet.node import Node
 from mininet.log import setLogLevel, info
 from mininet.cli import CLI
 from mininet.link import Intf
+from mininet.link import TCLink
 import time
 import os
 
@@ -33,12 +34,12 @@ class NetworkTopo( Topo ):
         h1 = self.addHost( 'h1', ip='10.0.1.100/24', defaultRoute='via 10.0.1.10') #define gateway
 
 #	self.addLink(router1,router2,intfName1='r1-eth1',intfName2='r2-eth1')
-	self.addLink(h1,router1,intfName2='r1-eth1',params2={ 'ip' : '10.0.1.10/24' })#params2 define the eth2 ip address
+	self.addLink(h1,router1,intfName2='r1-eth1',params2={ 'ip' : '10.0.1.10/24' },bw=100)#params2 define the address eth2 ip
 
 
 def run():
 	topo = NetworkTopo()
-	net = Mininet(controller = None, topo=topo )	
+	net = Mininet(controller = None, topo=topo, link=TCLink)	
 	r1=net.getNodeByName('r1')
 	Intf('eth0', node=r1)
 
@@ -49,6 +50,7 @@ def run():
 	r1.cmd('zebra -f /usr/local/etc/zebra.conf -d -z ~/Desktop/zebra.api -i ~/Desktop/r1zebra.interface')
 	time.sleep(1)#time for zebra to create api socket
 	r1.cmd('ospfd -f /usr/local/etc/r1ospfd.conf -d -z ~/Desktop/zebra.api -i ~/Desktop/r1ospfd.interface')
+
 
     
     
