@@ -131,18 +131,18 @@ if __name__ == "__main__":
     file2=[]
     file3=[]
     p = plt
-    p.title('Plot of Fork-in Test With Quagga Router in One Mininet mode')
+    p.title('Plot of Fork-out Test With Quagga Router in One Mininet mode')
     # p.figure(1)
     # for i in range(1,4):
     #     file1.append(getLogFile('./ForkInTestServerThread'+str(i)+'.log'))
     #     plot(p, file1, 1, 1, 'r', 'H'+str(i), 1)
-    file1.append(getLogFile('./ForkInTestServerThread1.log'))
+    file1.append(getLogFile('./ForkOutTestServerThread1.log'))
     plot(p, file1, 1, 1, 'r', 'H1', 1)
 
-    file2.append(getLogFile('./ForkInTestServerThread2.log'))
+    file2.append(getLogFile('./ForkOutTestServerThread2.log'))
     plot(p, file2, 1, 1, 'g', 'H2', 1)
 
-    file3.append(getLogFile('./ForkInTestServerThread3.log'))
+    file3.append(getLogFile('./ForkOutTestServerThread3.log'))
     plot(p, file3, 1, 1, 'b', 'H3', 1)
 
     p.legend(loc='lower right')
