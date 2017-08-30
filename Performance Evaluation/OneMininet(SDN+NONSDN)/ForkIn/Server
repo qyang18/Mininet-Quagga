@@ -1,0 +1,1 @@
+iperf3 -s -i 1 > test$1Server &
