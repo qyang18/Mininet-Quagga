@@ -28,9 +28,9 @@ class NetworkTopo( Topo ):
     def build( self, **_opts ):
 
     	defaultIP1 = '10.0.5.1/24'  # IP address for r0-eth1
-    	defaultIP2 = '10.0.5.20/24'
-    	defaultIP3 = '10.0.5.30/24'
-    	defaultIP4 = '10.0.5.40/24'
+    	defaultIP2 = '10.0.5.2/24'
+    	defaultIP3 = '10.0.6.2/24'
+    	defaultIP4 = '10.0.7.2/24'
     	router1 = self.addNode( 'r1', cls=LinuxRouter, ip=defaultIP1 )
     	router2 = self.addNode( 'r2', cls=LinuxRouter, ip=defaultIP2 )
     	router3 = self.addNode( 'r3', cls=LinuxRouter, ip=defaultIP3 )
@@ -43,8 +43,8 @@ class NetworkTopo( Topo ):
     	h4 = self.addHost( 'h4', ip='10.0.4.100/24', defaultRoute='via 10.0.4.10',dpid='0000000000000004')
 
         self.addLink(router1,router2,intfName1='r1-eth1',intfName2='r2-eth1',params1={'ip':'10.0.5.1/24'},bw=100)
-    	self.addLink(router1,router3,intfName1='r1-eth2',intfName2='r3-eth1',params1={'ip':'10.0.5.2/24'},bw=100)
-    	self.addLink(router1,router4,intfName1='r1-eth3',intfName2='r4-eth1',params1={'ip':'10.0.5.3/24'},bw=100)
+    	self.addLink(router1,router3,intfName1='r1-eth2',intfName2='r3-eth1',params1={'ip':'10.0.6.1/24'},bw=100)
+    	self.addLink(router1,router4,intfName1='r1-eth3',intfName2='r4-eth1',params1={'ip':'10.0.7.1/24'},bw=100)
         
         self.addLink(h1,router1,intfName2='r1-eth0',params2={ 'ip' : '10.0.1.10/24' },bw=100)#params2 define the eth2 ip address
         self.addLink(h2,router2,intfName2='r2-eth0',params2={ 'ip' : '10.0.2.10/24' },bw=100)
@@ -69,8 +69,8 @@ def run():
     r2.cmd('ifconfig r2-eth0 10.0.2.10/24')
     r3.cmd('ifconfig r3-eth0 10.0.3.10/24')
     r4.cmd('ifconfig r4-eth0 10.0.4.10/24')
-    r1.cmd('ifconfig r1-eth2 10.0.5.2/24')
-    r1.cmd('ifconfig r1-eth3 10.0.5.3/24')
+    r1.cmd('ifconfig r1-eth2 10.0.6.1/24')
+    r1.cmd('ifconfig r1-eth3 10.0.7.1/24')
     
     
     info('starting zebra and ospfd service:\n')
