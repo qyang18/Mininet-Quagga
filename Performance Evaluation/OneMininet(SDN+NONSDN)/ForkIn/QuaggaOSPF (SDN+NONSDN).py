@@ -42,12 +42,12 @@ class NetworkTopo( Topo ):
     	h3 = self.addHost( 'h3', ip='10.0.3.100/24', defaultRoute='via 10.0.3.10',dpid='0000000000000003')
     	h4 = self.addHost( 'h4', ip='10.0.4.100/24', defaultRoute='via 10.0.4.10',dpid='0000000000000004')
 
-	self.addLink(router1,router2,intfName1='r1-eth1',intfName2='r2-eth1',params1={'ip':'10.0.5.1/24'},bw=100)
+        self.addLink(router1,router2,intfName1='r1-eth1',intfName2='r2-eth1',params1={'ip':'10.0.5.1/24'},bw=100)
     	self.addLink(router1,router3,intfName1='r1-eth2',intfName2='r3-eth1',params1={'ip':'10.0.5.2/24'},bw=100)
     	self.addLink(router1,router4,intfName1='r1-eth3',intfName2='r4-eth1',params1={'ip':'10.0.5.3/24'},bw=100)
         
-	self.addLink(h1,router1,intfName2='r1-eth0',params2={ 'ip' : '10.0.1.10/24' },bw=100)#params2 define the eth2 ip address
-	self.addLink(h2,router2,intfName2='r2-eth0',params2={ 'ip' : '10.0.2.10/24' },bw=100)
+        self.addLink(h1,router1,intfName2='r1-eth0',params2={ 'ip' : '10.0.1.10/24' },bw=100)#params2 define the eth2 ip address
+        self.addLink(h2,router2,intfName2='r2-eth0',params2={ 'ip' : '10.0.2.10/24' },bw=100)
     	self.addLink(h3,router3,intfName2='r3-eth0',params2={ 'ip' : '10.0.3.10/24' },bw=100)
     	self.addLink(h4,router4,intfName2='r4-eth0',params2={ 'ip' : '10.0.4.10/24' },bw=100)
 
@@ -64,6 +64,14 @@ def run():
     r4=net.getNodeByName('r4')
     
     net.start()
+    
+    r1.cmd('ifconfig r1-eth0 10.0.1.10/24')
+    r2.cmd('ifconfig r2-eth0 10.0.2.10/24')
+    r3.cmd('ifconfig r3-eth0 10.0.3.10/24')
+    r4.cmd('ifconfig r4-eth0 10.0.4.10/24')
+    r1.cmd('ifconfig r1-eth2 10.0.5.2/24')
+    r1.cmd('ifconfig r1-eth3 10.0.5.3/24')
+    
     
     info('starting zebra and ospfd service:\n')
     r1.cmd('zebra -f /usr/local/etc/r1zebra.conf -d -z ~/Desktop/r1zebra.api -i ~/Desktop/r1zebra.pid')
