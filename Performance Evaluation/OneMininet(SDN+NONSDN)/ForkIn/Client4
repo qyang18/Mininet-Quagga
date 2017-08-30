@@ -1,0 +1,1 @@
+iperf3 -c 10.0.1.100 -i 1 -t 50 -p 10003 > test$1Client &

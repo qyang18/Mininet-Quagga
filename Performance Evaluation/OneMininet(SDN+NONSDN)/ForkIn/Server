@@ -1,1 +1,3 @@
-iperf3 -s -i 1 > test$1Server &
+iperf3 -s -i 1 -p 10001 > ForkInServerThread1 &
+iperf3 -s -i 1 -p 10002 > ForkInServerThread2 &
+iperf3 -s -i 1 -p 10003 > ForkInServerThread3 &

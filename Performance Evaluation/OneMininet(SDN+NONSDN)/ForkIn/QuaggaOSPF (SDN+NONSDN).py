@@ -27,29 +27,29 @@ class NetworkTopo( Topo ):
 
     def build( self, **_opts ):
 
-    defaultIP1 = '10.0.5.1/24'  # IP address for r0-eth1
-    defaultIP2 = '10.0.5.20/24'
-    defaultIP3 = '10.0.5.30/24'
-    defaultIP4 = '10.0.5.40/24'
-    router1 = self.addNode( 'r1', cls=LinuxRouter, ip=defaultIP1 )
-    router2 = self.addNode( 'r2', cls=LinuxRouter, ip=defaultIP2 )
-    router3 = self.addNode( 'r3', cls=LinuxRouter, ip=defaultIP3 )
-    router4 = self.addNode( 'r4', cls=LinuxRouter, ip=defaultIP4 )
+    	defaultIP1 = '10.0.5.1/24'  # IP address for r0-eth1
+    	defaultIP2 = '10.0.5.20/24'
+    	defaultIP3 = '10.0.5.30/24'
+    	defaultIP4 = '10.0.5.40/24'
+    	router1 = self.addNode( 'r1', cls=LinuxRouter, ip=defaultIP1 )
+    	router2 = self.addNode( 'r2', cls=LinuxRouter, ip=defaultIP2 )
+    	router3 = self.addNode( 'r3', cls=LinuxRouter, ip=defaultIP3 )
+    	router4 = self.addNode( 'r4', cls=LinuxRouter, ip=defaultIP4 )
 
 
-    h1 = self.addHost( 'h1', ip='10.0.1.100/24', defaultRoute='via 10.0.1.10',dpid='0000000000000001') #define gateway
-    h2 = self.addHost( 'h2', ip='10.0.2.100/24', defaultRoute='via 10.0.2.10',dpid='0000000000000002')
-    h3 = self.addHost( 'h3', ip='10.0.3.100/24', defaultRoute='via 10.0.3.10',dpid='0000000000000003')
-    h4 = self.addHost( 'h4', ip='10.0.4.100/24', defaultRoute='via 10.0.4.10',dpid='0000000000000004')
+    	h1 = self.addHost( 'h1', ip='10.0.1.100/24', defaultRoute='via 10.0.1.10',dpid='0000000000000001') #define gateway
+    	h2 = self.addHost( 'h2', ip='10.0.2.100/24', defaultRoute='via 10.0.2.10',dpid='0000000000000002')
+    	h3 = self.addHost( 'h3', ip='10.0.3.100/24', defaultRoute='via 10.0.3.10',dpid='0000000000000003')
+    	h4 = self.addHost( 'h4', ip='10.0.4.100/24', defaultRoute='via 10.0.4.10',dpid='0000000000000004')
 
 	self.addLink(router1,router2,intfName1='r1-eth1',intfName2='r2-eth1',params1={'ip':'10.0.5.1/24'},bw=100)
-    self.addLink(router1,router3,intfName1='r1-eth2',intfName2='r3-eth1',params1={'ip':'10.0.5.2/24'},bw=100)
-    self.addLink(router1,router4,intfName1='r1-eth3',intfName2='r4-eth1',params1={'ip':'10.0.5.3/24'},bw=100)
+    	self.addLink(router1,router3,intfName1='r1-eth2',intfName2='r3-eth1',params1={'ip':'10.0.5.2/24'},bw=100)
+    	self.addLink(router1,router4,intfName1='r1-eth3',intfName2='r4-eth1',params1={'ip':'10.0.5.3/24'},bw=100)
         
 	self.addLink(h1,router1,intfName2='r1-eth0',params2={ 'ip' : '10.0.1.10/24' },bw=100)#params2 define the eth2 ip address
 	self.addLink(h2,router2,intfName2='r2-eth0',params2={ 'ip' : '10.0.2.10/24' },bw=100)
-    self.addLink(h3,router3,intfName2='r3-eth0',params2={ 'ip' : '10.0.3.10/24' },bw=100)
-    self.addLink(h4,router4,intfName2='r4-eth0',params2={ 'ip' : '10.0.4.10/24' },bw=100)
+    	self.addLink(h3,router3,intfName2='r3-eth0',params2={ 'ip' : '10.0.3.10/24' },bw=100)
+    	self.addLink(h4,router4,intfName2='r4-eth0',params2={ 'ip' : '10.0.4.10/24' },bw=100)
 
 def run():
     "Test linux router"
