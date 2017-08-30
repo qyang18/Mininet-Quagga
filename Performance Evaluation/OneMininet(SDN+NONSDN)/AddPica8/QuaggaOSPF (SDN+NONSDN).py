@@ -28,7 +28,7 @@ class NetworkTopo( Topo ):
 
     def build( self, **_opts ):
 
-        defaultIP1 = '10.0.4.10/24'  # IP address for r0-eth1
+        defaultIP1 = '10.0.5.10/24'  # IP address for r0-eth1
 
         router1 = self.addNode( 'r1', cls=LinuxRouter, ip=defaultIP1 )
 #        router1 = self.addNode( 'r1', cls=LinuxRouter)

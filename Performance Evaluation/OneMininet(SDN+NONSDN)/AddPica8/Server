@@ -1,1 +1,1 @@
-iperf3 -s -i 1 > test$1Server &
+iperf3 -s -i 1 > AddPica8H1Server.log &
