@@ -1,0 +1,2 @@
+iperf3 -s -i 1 > ForkOutTestServerThread3.log &
+
