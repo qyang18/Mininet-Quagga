@@ -11,7 +11,11 @@
 
 ## Fork-in Topology:
 
+### We did fork-in test to evaluate the in-boud traffic queuing processing performance of Quagga routers.
+
 ## Fork-out Topology:
+
+### Fork-out test aims to check whether Quagga router can make out-boud traffic get a fair share of bandwdith resources.
 
 # 3.Two Mininet
 
@@ -23,4 +27,4 @@
 
 ## Two-way Topology(Add Pica8):
 
-### There are 2 aspects that need to be evaluated in Hybrid mode: the physical port and Pica8 switch.
+### There are 2 aspects that need to be evaluated in Hybrid mode: the physical port and Pica8 switch. By introducing non-SDN components into SDN network topology, we made our testbed capable of emulating traditional network experiment other than SDN network experiment. With both virtual and physical components inside, we have maintain the fidelity as well as scalability and reproducibility.
