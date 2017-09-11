@@ -3,7 +3,7 @@
 
 We designed topologies based on our previous testbed validation design.
 
-# 1.One Mininet
+# 1. One Mininet
 
 ## Two-way Topology(One Mininet):
 
@@ -17,13 +17,13 @@ We did fork-in test to evaluate the in-boud traffic queuing processing performan
 
 Fork-out test aims to check whether Quagga router can make out-boud traffic get a fair share of bandwdith resources.
 
-# 2.Two Mininet
+# 2. Two Mininet
 
 ## Two-way Topology(Two Mininet):
 
 We put two-way test components in two mininet by spliting the one mininet topology symmetrically. The goal is to prove a substitution of virtual link into physical link will not make performance down. 
 
-# 3.Hybrid
+# 3. Hybrid
 
 ## Two-way Topology(Add Pica8):
 
