@@ -7,7 +7,7 @@ We designed topologies based on our previous testbed validation design.
 
 ## Two-way Topology(One Mininet):
 
-Two-way test is the basic experiment to validate the fidelity of our Mininet-Quagga testbed. We conduct a two-way perf test on a simple topology to check the impact of Quagga router in Mininet.
+Two-way test is the basic experiment to validate the fidelity of our Mininet-Quagga testbed. We conduct a two-way perf test on a simple topology to check the impact of Quagga router in SDN network.
 
 ![](./OneMininet(SDN+NONSDN)/Twoway/Twoway(OneMininet).png)
 
