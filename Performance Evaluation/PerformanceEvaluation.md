@@ -29,7 +29,7 @@ Fork-out test aims to check whether Quagga router can make out-boud traffic get 
 
 We put two-way test components in two mininet by spliting the one mininet topology symmetrically. The goal is to prove a substitution of virtual link into physical link will not make performance down. 
 
-![](./Hybrid/Twoway/Twoway(TwoMininet).png)
+![](./Hybrid/TwoWay/Twoway(TwoMininet).png)
 
 # 3. Hybrid
 
