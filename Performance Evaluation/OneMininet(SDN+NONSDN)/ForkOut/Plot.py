@@ -145,5 +145,6 @@ if __name__ == "__main__":
     file3.append(getLogFile('./ForkOutTestServerThread3.log'))
     plot(p, file3, 1, 1, 'b', 'H3', 1)
 
+    p.ylim(0, 50)
     p.legend(loc='lower right')
     p.show()

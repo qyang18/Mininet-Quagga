@@ -153,5 +153,6 @@ if __name__ == "__main__":
     #     file1.append(getLogFile('./Log/WSCTreeLog/TreeOneMininetFullTestLog/TreeOnemininetLog' + str(i)+'v1'))
     # plot(p,file1,1,5,'g','OneMininetFullTest',1)
 
+    p.ylim(0, 105)
     p.legend(loc='upper right')
     p.show()

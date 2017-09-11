@@ -143,6 +143,6 @@ if __name__ == "__main__":
     plot(p, file2, 1, 1, 'b', 'H2', 1)
 
 
-
+    p.ylim(0,105)
     p.legend(loc='lower right')
     p.show()
