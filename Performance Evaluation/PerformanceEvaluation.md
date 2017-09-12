@@ -13,6 +13,8 @@ Two-way test is the basic experiment to validate the fidelity of our Mininet-Qua
 
 ![test](./OneMininet(SDN+NONSDN)/Twoway/test.png)
 
+<img src="./OneMininet(SDN+NONSDN)/Twoway/test.png" height="400" align="center" />
+
 From the result we can see both connections have an average throughput above 90 Mbits/sec.
 
 ## Fork-in Topology:
