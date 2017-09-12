@@ -11,7 +11,9 @@ Two-way test is the basic experiment to validate the fidelity of our Mininet-Qua
 
 ![](./OneMininet(SDN+NONSDN)/Twoway/Twoway(OneMininet).png)
 
-![test](./OneMininet(SDN+NONSDN)/Twoway/test.png)
+
+<img src="./OneMininet(SDN+NONSDN)/Twoway/test.png" height="400" align=center />
+
 
 From the result we can see both connections have an average throughput above 90 Mbits/sec.
 
@@ -21,7 +23,9 @@ We did fork-in test to evaluate the in-boud traffic queuing processing performan
 
 ![](./OneMininet(SDN+NONSDN)/ForkIn/ForkIn(OneMininet).png)
 
-![ForkIn2](./OneMininet(SDN+NONSDN)/ForkIn/ForkIn2.png)
+
+<img src="./OneMininet(SDN+NONSDN)/ForkIn/ForkIn2.png" height="400" align="center" />
+
 
 ## Fork-out Topology:
 
@@ -29,7 +33,7 @@ Fork-out test aims to check whether Quagga router can make out-boud traffic get 
 
 ![](./OneMininet(SDN+NONSDN)/ForkOut/ForkOut(OneMininet).png)
 
-![ForkOut](./OneMininet(SDN+NONSDN)/ForkOut/ForkOut.png)
+<img src="./OneMininet(SDN+NONSDN)/ForkOut/ForkOut.png" height="400" align="center" />
 
 # 2. Two Mininet
 
@@ -39,7 +43,7 @@ We put two-way test components in two mininet by spliting the one mininet topolo
 
 ![](./Hybrid/TwoWay/Twoway(TwoMininet).png)
 
-![TwoMininetPlot](./Hybrid/TwoWay/TwoMininetPlot.png)
+<img src="./Hybrid/TwoWay/TwoMininetPlot.png" height="400" align="center" />
 
 # 3. Hybrid
 
@@ -49,4 +53,4 @@ There are 2 aspects that need to be evaluated in Hybrid mode: the physical port 
 
 ![](./Hybrid/AddPica8/AddPica8(Hybrid).png)
 
-![AddPica8](./Hybrid/AddPica8/AddPica8.png)
+<img src="./Hybrid/AddPica8/AddPica8.png" height="400" align="center" />
