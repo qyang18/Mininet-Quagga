@@ -1,7 +1,7 @@
 
 # Performance Evaluation
 
-We designed topologies based on our previous testbed validation design.
+We designed topologies based on our previous testbed validation. The new coponent is software router which make virtual host in mininet a router. In our performance evaluation, all software routers are running OSPF routing protocols and we want to prove that our testbed can maintain good performance when adding non-SDN components into our hardware-in-the-loop SDN testbed.
 
 # 1. One Mininet
 
@@ -12,6 +12,8 @@ Two-way test is the basic experiment to validate the fidelity of our Mininet-Qua
 ![](./OneMininet(SDN+NONSDN)/Twoway/Twoway(OneMininet).png)
 
 ![test](./OneMininet(SDN+NONSDN)/Twoway/test.png)
+
+From the result we can see both connections have an average throughput above 90 Mbits/sec.
 
 ## Fork-in Topology:
 
