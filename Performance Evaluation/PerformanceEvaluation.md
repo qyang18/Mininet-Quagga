@@ -11,7 +11,7 @@ Two-way test is the basic experiment to validate the fidelity of our Mininet-Qua
 
 ![](./OneMininet(SDN+NONSDN)/Twoway/Twoway(OneMininet).png)
 
-![test](./OneMininet(SDN+NONSDN)/Twoway/test.png =100*100)
+![test](./OneMininet(SDN+NONSDN)/Twoway/test.png)
 
 From the result we can see both connections have an average throughput above 90 Mbits/sec.
 
